@@ -34,6 +34,13 @@
   max-width:100%;
 }
 
+.mobile-logo{
+  display:none;
+  object-fit: cover;
+  max-width:100%;
+  
+}
+
 .tabs-container{
   display: flex;
 }
@@ -91,13 +98,74 @@
 
 .burger-container{
   color:#fff;
-  border:solid black;
+  display:none;
+}
+
+.cross-container{
   display:none;
 }
 
 @media (max-width: 768px){
-  .tabs-container, .link, .symbol-user-container{
-    display: none;
+  
+  .header-container{
+    background-color:#F8444F;
+  }
+  .mobile-logo{
+    display:block;
+  }
+  .user-button,.tabs-container,.symbol-container,.web-logo{
+    display:none;
   }
 
+  .burger-container{
+    position: absolute;
+    display: block;
+    right:5%;
+  }
+  .burger-container.isOpen{
+    display: none;
+  }
+  
+  .tabs-container.isOpen{
+    background-color:#fff;
+    display: grid;
+    position: absolute;
+    width:100%;
+    height:30%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 0.5em;
+    justify-content: center;
+    top:10%;
+    left:0;
+  }
+
+  .symbol-container.isOpen{
+    position:absolute;
+    display:flex;
+    width: max-content;
+    inset: 0;
+    margin: auto;
+  }
+
+  .cross-container{
+    display:block;
+    margin-bottom:2rem;
+    position: absolute;
+    right:2%;
+    top:2%;
+    color:#F8444F;
+    font-size:large;
+  }
+
+  .user-button{
+    display: block;
+    position: absolute;
+    color:#fff;
+    border:none;
+    top:3%;
+    right:15%;
+    content:'Log In'
+  }
 }
