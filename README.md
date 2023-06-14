@@ -6,6 +6,9 @@ The navigation bar is built using
  -  `React Icons`,
  -   `CSS` & `Tailwind CSS`,
  -    `Vite`.
+ #Quick Reference
+ ![image](https://github.com/surazgaundel/Responsive-NavBar-for-SimuVerse-Project/assets/58950508/fc8c4796-e5c3-47dc-920e-6be4a6ad89f9)
+
 
 # Installation
 Clone the repository:
